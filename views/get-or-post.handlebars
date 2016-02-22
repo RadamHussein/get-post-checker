@@ -1,0 +1,14 @@
+<h1>{{this.type}} Request Received</h1>
+<h3>Query String Pairs:</h3>
+<ul>
+  {{#each paramList}}
+    <li>{{this.name}}: {{this.value}}
+  {{/each}}
+</ul>
+<h3>{{this.header}}</h3>
+<ul>
+  {{#each bodyList}}
+    <li>{{this.body-name}}: {{this.body-value}}
+  {{/each}}
+</ul>
+
